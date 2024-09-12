@@ -1,11 +1,11 @@
 [
     {
-      "title": "Project A",
+      "title": "MergeSort",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
+      "description": "This is a simple merge sort made in python",
+      "skills": ["Python"],
       "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "source": "https://github.com/FelixCD/Merge-Sort"
     },
     {
       "title": "Project B",

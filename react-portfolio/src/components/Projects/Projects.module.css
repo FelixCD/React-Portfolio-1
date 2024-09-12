@@ -3,8 +3,8 @@
 .container {
     margin-top: 76px;
     color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .title {
@@ -15,12 +15,28 @@
 }
 
 .projects {
-    margin-top: 37px;
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: nowrap; /* Prevent wrapping */
     align-items: center;
-    justify-content: center;
     gap: 15px;
     width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    padding-bottom: 10px;
+}
+.projects::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+}
+
+.projects::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+.projects::-webkit-scrollbar-thumb:hover {
+    background: var(--color-dark);
 }

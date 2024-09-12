@@ -104,5 +104,23 @@
     }
 
     .content {
-        align-items: center;}
+        align-items: center;
+    }
+
+.description {
+    width:100%;
 }
+
+    @keyframes floating {
+        0% {
+            transform: translate(0, -40px);
+        }
+            50% {
+            transform: translate(0, -20px);
+        }
+
+            100% {
+            transform: translate(0, -40px);
+            }
+        }
+    }

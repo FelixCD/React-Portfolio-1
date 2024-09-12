@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: row;
     gap: 50px;
+    align-items: center;
 }
 
 .ulItems {
@@ -69,18 +70,26 @@
 }
 
 .image {
-        max-height: 150px;
+        max-height: 130px;
 }
 
 @media screen and (max-width: 830px) {
     .container{
-        background-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 10px;
     }
 
     .aboutImg{
         display:none;
+    }
+    
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .title{
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .aboutItems{
@@ -88,7 +97,15 @@
     }
 
     .item{
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .description{
+        justify-content: center;
+    }
+
+    .image {
+        display:none;
     }
 }
