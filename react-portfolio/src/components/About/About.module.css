@@ -58,3 +58,33 @@
 .item:hover{
     background-size: 100% 100%;
 }
+
+.item h2{
+    font-size:25px;
+    font-weight: 600;
+}
+
+.item {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 830px) {
+    .container{
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .aboutImg{
+        display:none;
+    }
+
+    .aboutItems{
+        margin-top: 29px;
+    }
+
+    .item{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
