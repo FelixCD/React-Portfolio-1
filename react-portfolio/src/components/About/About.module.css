@@ -68,6 +68,10 @@
     font-size: 25px;
 }
 
+.image {
+        max-height: 150px;
+}
+
 @media screen and (max-width: 830px) {
     .container{
         background-color: transparent;

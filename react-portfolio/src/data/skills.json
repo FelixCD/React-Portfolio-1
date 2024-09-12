@@ -1,5 +1,21 @@
 [
     {
+      "title": "Python",
+      "imageSrc": "skills/python.png"
+    },
+    {
+      "title": "Java",
+      "imageSrc": "skills/java.png"
+    },
+    {
+      "title": "C",
+      "imageSrc": "skills/C.png"
+    },
+    {
+      "title":"C++",
+      "imageSrc": "skills/C++.png"
+    },
+    {
       "title": "HTML",
       "imageSrc": "skills/html.png"
     },
@@ -14,14 +30,6 @@
     {
       "title": "Node",
       "imageSrc": "skills/node.png"
-    },
-    {
-      "title": "GraphQL",
-      "imageSrc": "skills/graphql.png"
-    },
-    {
-      "title": "MongoDB",
-      "imageSrc": "skills/mongodb.png"
     },
     {
       "title": "Figma",
