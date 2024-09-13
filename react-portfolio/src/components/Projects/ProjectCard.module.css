@@ -5,7 +5,7 @@
     flex-direction: column;
     border-radius: 10px;
     background: var(--color-secondary);
-    box-shadow: 0 16px 14px 0 #041523;
+    box-shadow: 2px 2px 2px 1px #041523;
     padding: 18px 24px;
     max-width: 450px;
     min-height: 580px;
