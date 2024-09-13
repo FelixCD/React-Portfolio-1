@@ -17,16 +17,17 @@
 .projects {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap; 
     align-items: center;
     gap: 15px;
     width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: auto; 
+    overflow-y: hidden; 
     padding-bottom: 10px;
 }
 .projects::-webkit-scrollbar {
     height: 8px;
+    min-width: 110%;
 }
 
 .projects::-webkit-scrollbar-track {

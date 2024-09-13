@@ -34,7 +34,7 @@ export const Navbar = () => {
             onClick={() => setMenuOpen(false)}>
                 <li className={styles.closeItem}>
                     <img
-                    className={`${styles.closeBtn} ${menuOpen ?  "" : styles.closeBtnOpen}`}
+                    className={`${styles.closeBtn} ${menuOpen ?  styles.closeBtnOpen : ""}`}
                     src={
                         getImageUrl("nav/closeIcon.png")
                         }
