@@ -1,4 +1,7 @@
+
 import styles from "./App.module.css"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import { About } from "./components/About/About"
 import { Contact } from "./components/Contact/Contact"
 import { Experience } from "./components/Experience/Experience"
@@ -10,12 +13,22 @@ function App() {
 
   return (
   <div className={styles.App}>
-    <Navbar />
-    <Hero />
-    <About />
-    <Experience />
-    <Projects />
-    <Contact />
+    <Router>
+      <div className={styles.navBar}>
+        <Navbar />
+      </div>
+      <div className={styles.mainContent}>
+      <Routes>
+      <Route path="/" element={<Hero />}/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/experience" element={<Experience />}/>
+      <Route path="/projects" element={<Projects />}/>
+      <Route path="/contact" element={<Contact />}/>
+      </Routes>
+      </div>
+      <Contact />
+    </Router>
+
   </div>
   )
 }

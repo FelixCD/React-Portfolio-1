@@ -4,7 +4,8 @@ import styles from "./About.module.css";
 
 export const About = () => {
     return ( 
-    <section className={styles.container} id="about">
+    <section className={styles.page} id="about">
+        <div className={styles.container}>
         <h1 className={styles.title}>About</h1>
         <div className={styles.content}>
         <img src={getImageUrl("about/aboutImage.png")} className={styles.aboutImg}/>
@@ -31,6 +32,7 @@ export const About = () => {
                     </div>
                 </li>
             </ul>
+        </div>
         </div>
     </section> 
     );

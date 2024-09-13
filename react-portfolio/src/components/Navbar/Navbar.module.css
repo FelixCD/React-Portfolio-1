@@ -1,20 +1,22 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 61px;
-    z-index: 2;
-    margin: 0 10%;
+    padding-top: 35px;
+    z-index: 13;
+    background-color: var(--color-secondary);
+    width: 100vw;
+    padding: 1% 10%;
 }
 
 .title {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-text-dark);
 }
 
 .menu{
@@ -28,9 +30,18 @@
 }
 .menuItems a {
     font-size: 25px;
-    color: var(--color-text);
+    color: var(--color-text-dark);
     text-decoration: none;
 }
+
+.title:hover {
+    color: var(--color-primary);
+}
+
+.menuItems a:hover{
+    color: var(--color-primary);
+}
+
 .menuBtn{
     display:none;
 }
@@ -40,32 +51,70 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .title {
+        color:var(--color-text-dark);
+    }
+
+
     .menu {
         position: absolute;
         right: 0px;
-        margin-right: 10%;
         flex-direction: column;
         align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
+        z-index: 13;
+        right: 15px;
     }
 
-    .menuBtn{
+    .menuBtn {
         display: block;
         cursor: pointer;
+        margin-right: 20%;
+        padding-right: 10%;
+        z-index: 20;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .menuBtn:hover {
+        content: url("../../../assets/nav/menuIconGreen.png"); /* Hamburger icon hover */
+    }
+    
+    /* Add separate styles for the "X" icon when menu is open */
+    .menuBtnOpen:hover {
+        content: url("../../../assets/nav/closeIconGreen.png"); /* X icon hover */
     }
 
     .menuItems {
-        display:none;
+        position: absolute;
+        right: -20px;
+        height: 100vh;
         flex-direction: column;
-        align-items: center;
-        gap: 13px; 
-        border-radius: 10px;
+        align-items: flex-start;
+        margin-top: -15%;
+        gap: 11px;
+        z-index: 13;
         background: rgb(25,55,109);
-        background: linear-gradient(0deg, rgba(25,55,109,0.2) 0%, rgba(25,55,109, 1) 100%);
-        padding: 25px 33px;
-        box-shadow: 0 0
-         4px 0 rgba(0,0,0,0.25);
+        background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-secondary) 50%);
+        box-shadow: -3px 0 5px rgba(0,0,0,0.3);
+        padding: 50px 33px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .menuOpen {
+        transform: translateX(0);
+    }
+
+    .menuOpen.menuBtn:hover{
+        content: url("../../../assets/nav/closeIconGreen.png");
+    }
+
+    .menuItems a {
+        color: var(--color-text-dark);
+    }
+
+    .menuItems a:hover{
+        color: var(--color-primary);
     }
 
     .menuOpen{
