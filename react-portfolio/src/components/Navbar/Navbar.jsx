@@ -26,20 +26,25 @@ export const Navbar = () => {
         <div className={styles.menu} ref={menuRef}>
         <img
             className={`${styles.menuBtn} ${menuOpen ? styles.menuBtnOpen : ""}`}
-            src={
-                menuOpen
-                ? getImageUrl("nav/closeIcon.png") // Your X icon
-                : getImageUrl("nav/menuIcon.png")  // Your hamburger icon
-            }
+            src={getImageUrl("nav/menuIcon.png")}
             alt="menu-button"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen(true)}
             />
-            <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+            <ul className={`${menuOpen ? styles.menuOpen : ""} ${styles.menuItems}`}
             onClick={() => setMenuOpen(false)}>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/experience">Experience</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><a href="#contact">Contact</a></li>
+                <li className={styles.closeItem}>
+                    <img
+                    className={`${styles.closeBtn} ${menuOpen ?  "" : styles.closeBtnOpen}`}
+                    src={
+                        getImageUrl("nav/closeIcon.png")
+                        }
+                    alt="close-button"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                /></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/experience">Experience</Link></li>
+                    <li><Link to="/projects">Projects</Link></li>
+                    <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>;

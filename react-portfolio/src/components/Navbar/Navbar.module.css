@@ -46,10 +46,16 @@
     display:none;
 }
 
+.closeBtn {
+    display: block;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 830px){
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+    
     }
 
     .title {
@@ -60,10 +66,10 @@
     .menu {
         position: absolute;
         right: 0px;
+        top: 0px;
         flex-direction: column;
         align-items: flex-end;
         z-index: 13;
-        right: 15px;
     }
 
     .menuBtn {
@@ -72,40 +78,56 @@
         margin-right: 20%;
         padding-right: 10%;
         z-index: 20;
-        transition: all 0.3s ease-in-out;
     }
     
     .menuBtn:hover {
-        content: url("../../../assets/nav/menuIconGreen.png"); /* Hamburger icon hover */
-    }
-    
-    /* Add separate styles for the "X" icon when menu is open */
-    .menuBtnOpen:hover {
-        content: url("../../../assets/nav/closeIconGreen.png"); /* X icon hover */
+        content: url("../../../assets/nav/menuIconGreen.png");
     }
 
     .menuItems {
         position: absolute;
-        right: -20px;
+        right: 0;
         height: 100vh;
+        width: 250px; 
         flex-direction: column;
         align-items: flex-start;
-        margin-top: -15%;
-        gap: 11px;
+        gap: 20px;
         z-index: 13;
-        background: rgb(25,55,109);
         background: linear-gradient(0deg, var(--color-bg) 0%, var(--color-secondary) 50%);
         box-shadow: -3px 0 5px rgba(0,0,0,0.3);
         padding: 50px 33px;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
+
+    .closeItem {
+        position: absolute;
+        top: 0; 
+        right: 0; 
+        width: 100%; 
+        padding: 1% 10%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .closeBtn{
+        
+    right: -500px;
+    }
     
     .menuOpen {
         transform: translateX(0);
     }
 
-    .menuOpen.menuBtn:hover{
+    .menuBtnOpen {
+        display:none;
+    }
+
+    .closeBtnOpen {
+        display: none;
+    }
+
+    .closeBtn:hover {
         content: url("../../../assets/nav/closeIconGreen.png");
     }
 
