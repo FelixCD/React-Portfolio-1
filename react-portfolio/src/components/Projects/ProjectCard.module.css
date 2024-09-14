@@ -9,11 +9,14 @@
     padding: 18px 24px;
     max-width: 450px;
     min-height: 580px;
-    margin-bottom: 2%;
+    margin-bottom: 2%;  
 }
 
 .img {
     margin-bottom: 26px;
+    box-shadow: 2px 2px 2px 2px #041523;
+    z-index: 10;
+    border-radius: 15px;
 }
 
 .title {

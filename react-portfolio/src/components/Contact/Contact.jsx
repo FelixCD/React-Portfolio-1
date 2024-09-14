@@ -43,8 +43,9 @@ export const Contact = () => {
             <div className={styles.topContainer}>
                 <div className={styles.info}>
                     <h1>Contact Me</h1>
-                    <p>For any inquiries, please attach your details below. Include in your message
-                        all information about the project you need assistance with.
+                    <p>For any website inquiries, please attach your details below. Include in your message
+                        all information about the website you need assistance with. Please include in
+                        your request any features that your site needs such as any colour requirements. 
                     </p>
                 </div>
                 <img src={getImageUrl('contact/phoneIcon.png')} alt="phone icon"/>
@@ -77,7 +78,7 @@ export const Contact = () => {
                 </div>
 
                 <div className={styles.input}>
-                    <label htmlFor="number" className={styles.subTitle}>Number</label>
+                    <label htmlFor="number" className={styles.subTitle}>Number:</label>
                     <input
                         type="tel"
                         id="number"

@@ -1,26 +1,18 @@
 [
     {
+      "title": "Portfolio Website",
+      "imageSrc": "projects/website.png",
+      "description": "This is website you are currently on.",
+      "skills": ["React", "EmailJS"],
+      "demo": "./projects",
+      "source": "https://github.com/FelixCD/React-Portfolio-1"
+    },
+    {
       "title": "MergeSort",
       "imageSrc": "projects/project.png",
       "description": "This is a simple merge sort made in python",
       "skills": ["Python"],
-      "demo": "https://www.example.com",
+      "demo": "",
       "source": "https://github.com/FelixCD/Merge-Sort"
-    },
-    {
-      "title": "Project B",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Project C",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
     }
   ]

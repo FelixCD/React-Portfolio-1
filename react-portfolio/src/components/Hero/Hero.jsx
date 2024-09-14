@@ -15,7 +15,7 @@ export const Hero = () => {
             <h1 className={styles.title}>Hi, I'm Felix</h1>
             <p className={styles.description}>I am a passionate MSci Computer Science student, with an interest in Backend Software Development.
                  I am offering my fullstack web-development services. I have experience in web developement with React and NodeJS and Java desktop
-                 application development.</p>
+                 application development. Please feel free to reach out for any inquiries using the contact page.</p>
         <button className={styles.contactBtn} onClick={
                     btnClick}>Contact Me</button>
         </div>
