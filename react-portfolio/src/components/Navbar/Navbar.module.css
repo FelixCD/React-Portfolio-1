@@ -10,6 +10,7 @@
     background-color: var(--color-secondary);
     width: 100vw;
     padding: 1% 10%;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
 }
 
 .title {

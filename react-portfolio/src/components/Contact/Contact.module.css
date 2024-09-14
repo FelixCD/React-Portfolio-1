@@ -1,10 +1,41 @@
 @import "../../vars.css";
 
+.topContainer {
+    display: flex;
+}
+
+.topContainer img {
+    padding: 5% 10% 5% 20%; /* Maintain your padding, but in percentages */
+    width: auto; /* Set width to auto so it grows naturally */
+    max-width: 100%; /* Make sure the image can fill the parent container */
+    height: auto; /* Keep the aspect ratio intact */
+    max-height: 350px; /* Ensure it doesn't grow beyond 350px in height */
+    min-height: 100px; /* Prevent the image from shrinking too much */
+    object-fit: contain; animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 40px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
 .info{
     display: flex;
     flex-direction: column;
     margin-top:10px;
-    margin-left: 20px;
+    padding-left:5%;
+    padding-top: 2%;
 }
 
 .info h1 {
@@ -21,15 +52,19 @@
 }
 
 .form {
+    align-items: center;
+    margin-right: 0; 
+    width: 90%; 
+    margin: 0 auto;
     position: relative;
     background-color: var(--color-secondary);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 73px;
+    padding: 50px;
     z-index: 1;
-    margin-right: 10%;
+    width: 90%; 
     width: calc(100% - 10%); /* Adjust width if needed */
 }
 
@@ -54,13 +89,16 @@
 }
 
 .messagebox {
-    width: 100%;
-    min-height:150px;
+    width: 80%;
+    min-height:250px;
     box-sizing: border-box; 
     padding: 10px; 
+    max-width: 100%;
     border-radius: 10px;
     overflow-x: hidden;
     overflow-y: hidden;
+    resize: none;
+    font-size: 20px;
 }
 
 .submitButton{
@@ -76,27 +114,44 @@
 
 .submitButton:hover{
     color:var(--color-secondary);
+    border-color: var(--color-text-light);
 }
 
 @media screen and (max-width: 830px) {
 
+    .topContainer img{
+        display:none;
+    }
+
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        margin-top:10px;
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .info p{
+        text-align: center;
+    }
+
     .form {
         position: relative;
         align-items: center;
-        margin-right: 0; /* Remove right margin */
-        width: 90%; /* Adjust width if needed */
+        margin-right: 0; 
+        width: 90%; 
         margin: 0 auto;
     }
 
     
     .messagebox {
         width: 120%;
-        min-height:200px;
+        min-height:300px;
         box-sizing: border-box; 
         border-radius: 10px;
         overflow-x: hidden;
         overflow-y: hidden;
-        margin-left: -10%;
     }
 
 }
