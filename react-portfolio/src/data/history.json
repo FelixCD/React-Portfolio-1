@@ -19,5 +19,16 @@
         "Refactored old Swift game using Javafx", "Redesigned the UI"
       ],
       "imageSrc": "history/UONLogo.png"
+    },
+    {
+      "role": "Personal Tutor of Computer Science",
+      "organisation": "GoStudent",
+      "startDate": "Apr, 2023",
+      "endDate":"",
+      "experiences": [ 
+        "Educated students on A Level Theory and Programming", "Developed Python skills"
+      ]  ,
+      "imageSrc": "history/gostudentIcon.png"
     }
+
   ]
