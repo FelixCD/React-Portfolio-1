@@ -6,11 +6,12 @@ import emailjs from '@emailjs/browser';
 export const Contact = () => {
     
     const form = useRef();
+    const [submitted,setsubmitted] = useState(false);
 
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        phoneNumber: '',  // This corresponds to the phone input field
+        phoneNumber: '',  
         message: '',
     });
 
@@ -20,8 +21,17 @@ export const Contact = () => {
 
     // Initialize EmailJS once when the component loads
     React.useEffect(() => {
-        emailjs.init('Ngq0DlK2YngRcJlii');  // Use your correct public key here
+        emailjs.init('Ngq0DlK2YngRcJlii');  
     }, []);
+    
+    const resetForm = () => {
+        setFormData({
+            name:'',
+            email:'',
+            phoneNumber:'',
+            message:'',
+        });
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -31,12 +41,15 @@ export const Contact = () => {
           .then(
             (result) => {
               console.log('SUCCESS!', result.text);
+              setsubmitted(true);
+              resetForm();
             },
             (error) => {
               console.log('FAILED...', error.text);
             },
           );
     };
+
 
     return (
         <div>
@@ -101,7 +114,10 @@ export const Contact = () => {
                     />
                 </div>
                 <button type="submit" className={styles.submitButton}>Submit</button>
+                <p className={`${styles.submittedMessage} ${submitted ?  styles.submitted : ""}`}>Submitted Successfully!</p>
+    
             </form>
-        </div>
+
+            </div>
     );
 };
