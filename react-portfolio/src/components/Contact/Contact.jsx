@@ -53,15 +53,15 @@ export const Contact = () => {
 
     return (
         <div>
+            <h1 className={styles.title}>Contact Me</h1>
             <div className={styles.topContainer}>
                 <div className={styles.info}>
-                    <h1>Contact Me</h1>
                     <p>For any website inquiries, please attach your details below. Include in your message
                         all information about the website you need assistance with. Please include in
                         your request any features that your site needs such as any colour requirements. 
                     </p>
                 </div>
-                <img src={getImageUrl('contact/phoneIcon.png')} alt="phone icon"/>
+                <img className={styles.img} src={getImageUrl('contact/phoneIcon.png')} alt="phone icon"/>
             </div>
             <form ref={form} onSubmit={sendEmail} className={styles.form}>
                 <div className={styles.input}>

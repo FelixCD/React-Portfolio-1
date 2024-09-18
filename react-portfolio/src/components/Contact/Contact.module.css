@@ -38,9 +38,10 @@
     padding-top: 2%;
 }
 
-.info h1 {
-    font-size: 72px;
-    font-weight: 900;
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .info p {
@@ -91,8 +92,9 @@
 .submittedMessage {
     background-color: rgba(46,139,87,0.7);
     font-size: 30px;
-    border-radius: 20px;
+    border-radius: 8px;
     width:75%;
+    padding: 10px;
     text-align: center;
     border-style: solid;
     border-color: var(--color-text-dark);
@@ -155,6 +157,7 @@
 
     .info p{
         max-width: 90%;
+        font-size: var(--font-mobile-para);
     }
 
     .form {

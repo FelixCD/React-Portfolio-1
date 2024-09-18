@@ -5,8 +5,8 @@ import styles from "./About.module.css";
 export const About = () => {
     return ( 
     <section className={styles.page} id="about">
-        <div className={styles.container}>
         <h1 className={styles.title}>About</h1>
+        <div className={styles.container}>
         <div className={styles.content}>
         <img src={getImageUrl("about/aboutImage.png")} className={styles.aboutImg}/>
             <ul className={styles.ulItems}>
