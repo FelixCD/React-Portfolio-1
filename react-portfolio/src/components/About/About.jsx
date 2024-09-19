@@ -21,6 +21,7 @@ export const About = () => {
                         </p>
                     </div>
                 </li>
+                <img className={styles.line} src={getImageUrl("about/line.png")}></img>
                 <li className={styles.element}>
                     <img src={getImageUrl("about/lightBulb.png")} className={styles.image} />
                     <div className={styles.item}>

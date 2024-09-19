@@ -52,6 +52,7 @@ export const Contact = () => {
 
 
     return (
+        <section className={styles.container}>
         <div>
             <h1 className={styles.title}>Contact Me</h1>
             <div className={styles.topContainer}>
@@ -119,5 +120,6 @@ export const Contact = () => {
             </form>
 
             </div>
+            </section>
     );
 };

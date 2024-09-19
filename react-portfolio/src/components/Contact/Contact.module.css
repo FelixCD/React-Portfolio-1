@@ -1,7 +1,25 @@
 @import "../../vars.css";
 
+.container {
+    color: var(--color-text-dark);
+}
+
+.title{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    margin-top: 25px;
+    margin-left:30px;
+    text-transform: uppercase;
+}
+
+
 .topContainer {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: -140px;
 }
 
 .topContainer img {
@@ -36,12 +54,6 @@
     margin-top:10px;
     padding-left:5%;
     padding-top: 2%;
-}
-
-.title {
-    font-size: 35px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .info p {
@@ -141,13 +153,14 @@
 
     .topContainer img{
         display:none;
+        margin-top: 140px;
     }
 
     
     .info{
         display: flex;
         flex-direction: column;
-        margin-top:10px;
+        margin-top: 140px;
         align-items: center;
         padding: 0 20px;
         margin-right: 10px;
