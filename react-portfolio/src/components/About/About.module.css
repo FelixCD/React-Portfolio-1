@@ -123,7 +123,8 @@
 @media screen and (max-width: 830px) {
     .container{
         padding: 10px;
-        margin: 2% 0%;
+        margin: 2% 5%;
+        width: 90%;
     }
 
     .aboutImg{
