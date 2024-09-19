@@ -75,8 +75,8 @@
 
 .topBlur {
     position: absolute;
-    width: 50%vw;
-    height: 50vw;
+    width: 50vw;
+    height: 50vh;
     min-width: 350px;
     min-height: 350px;
     top: -128px;

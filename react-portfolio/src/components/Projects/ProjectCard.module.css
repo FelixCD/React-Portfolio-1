@@ -10,6 +10,7 @@
     max-width: 350px;
     min-height: 580px;
     margin-bottom: 2%;  
+    z-index: 10;
 }
 
 .img {

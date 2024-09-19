@@ -13,6 +13,8 @@ export const Projects = () => {
                 })
             }
         </div>
+    <div className={styles.topBlur}/>
+    <div className={styles.bottomBlur}/>
     </section>;
         
 };

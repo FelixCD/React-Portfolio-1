@@ -35,6 +35,8 @@ export const About = () => {
             </ul>
         </div>
         </div>
+        <div className={styles.topBlur}/>
+        <div className={styles.bottomBlur}/>
     </section> 
     );
 };

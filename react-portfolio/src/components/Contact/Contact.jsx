@@ -120,6 +120,9 @@ export const Contact = () => {
             </form>
 
             </div>
+                
+            <div className={styles.topBlur}/>
+            <div className={styles.bottomBlur}/>
             </section>
     );
 };
