@@ -77,8 +77,8 @@
     align-items: center;
     gap: 15px;
     overflow-x: auto; 
-    overflow-y: hidden; 
-    padding-bottom: 10px;
+    overflow-y: visible; 
+    padding: 35px; 
     z-index: 10;
 }
 

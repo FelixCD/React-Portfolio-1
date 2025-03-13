@@ -11,6 +11,7 @@ section {
     margin-right: 10%;
     z-index: 10;
     position: relative;
+    padding-right: 48px;
 }
 
 .title{
@@ -32,6 +33,7 @@ section {
 }
 
 .skills {
+    margin-left: 150px;
     width: 45%;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +45,36 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 11px;
+    position: relative; /* Needed for absolute positioning of the circle */
 }
+
+.greenCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    stroke: green;
+    stroke-width: 4;
+    stroke-dasharray: 408; /* Full circle (2 * π * 60) */
+    stroke-dashoffset: 408; /* Start fully hidden */
+    transform: rotate(-90deg); /* Rotate so stroke starts from the top */
+    transform-origin: center;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.skill:hover .greenCircle {
+    stroke-dashoffset: 0; /* Animates drawing the full circle */
+}
+
+@keyframes rotateCircle {
+    0% {
+        transform: rotate(0deg) translate(70px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(70px) rotate(-360deg);
+    }
+}
+
 
 .skillImageContainer{
     background-color: var(--color-secondary);
@@ -70,6 +101,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    min-width: 300px;
 }
 
 .historyItem {

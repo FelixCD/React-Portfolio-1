@@ -17,6 +17,7 @@
     align-items: flex-start;
     color: var(--color-text-dark);
     z-index: 1;
+    min-width: 550px;
 }
 
 .title {

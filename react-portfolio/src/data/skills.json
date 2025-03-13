@@ -16,6 +16,10 @@
       "imageSrc": "skills/C++.png"
     },
     {
+      "title":"OpenGL",
+      "imageSrc": "skills/opengl.png"
+    },
+    {
       "title": "HTML",
       "imageSrc": "skills/html.png"
     },
