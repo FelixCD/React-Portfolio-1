@@ -5,12 +5,13 @@ import styles from "./About.module.css";
 export const About = () => {
     return ( 
     <section className={styles.page} id="about">
-        <h1 className={styles.title}>About</h1>
+        <div className={styles.mainContainer}>
+        <h1 className={styles.title}>ABOUT</h1>
         <div className={styles.container}>
-        <div className={styles.content}>
         <img src={getImageUrl("about/aboutImage.png")} className={styles.aboutImg}/>
-            <ul className={styles.ulItems}>
-                <li className={styles.element}>
+        <div className={styles.content}>
+        <div className={styles.ulItems}>
+                <div className={styles.element}>
                     <img src={getImageUrl("about/uniHat.png")} className={styles.image}/>
                     <div className={styles.item}>
                         <h2 className={styles.subTitle}>Education</h2>
@@ -20,9 +21,8 @@ export const About = () => {
                             on full stack development using NodeJS and React.
                         </p>
                     </div>
-                </li>
-                <img className={styles.line} src={getImageUrl("about/line.png")}></img>
-                <li className={styles.element}>
+                </div>
+                <div className={styles.element}>
                     <img src={getImageUrl("about/lightBulb.png")} className={styles.image} />
                     <div className={styles.item}>
                         <h2 className={styles.subTitle}>Skills Development</h2>
@@ -31,8 +31,9 @@ export const About = () => {
                             more about cutting edge technologies such as these.
                         </p>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </div>
         </div>
         </div>
         <div className={styles.topBlur}/>
